@@ -1,0 +1,104 @@
+import math
+
+while True:
+    SolvingLibrarySelect = input("Welcome to OmniSolver! What solving library do you want to use?\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'sfc' = Six Function Calculator\n'scic' = Scientific Calculator")
+
+    while True:
+        if (SolvingLibrarySelect == "sfc"):
+            sfcOperationSelect = input("Welcome to the Four Function Calculator! What operation do you want to use?\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'add' = Addition\n'sub' = Subtraction\n'mult' = Multiplication\n'div' = Division\n'pct' = Percent\n'sqrt' = Square Root")
+            if (sfcOperationSelect == "add"):
+                AddX = int(input("What is your first number?"))
+                AddY = int(input("What is your second number?"))
+                print("Here is your result:", AddX+AddY)
+
+            if (sfcOperationSelect == "sub"):
+                SubX = int(input("What is your first number?"))
+                SubY = int(input("What is your second number?"))
+                print("Here is your result:", SubX-SubY)
+
+            if (sfcOperationSelect == "mult"):
+                MultX = int(input("What is your first number?"))
+                MultY = int(input("What is your second number?"))
+                print("Here is your result:", MultX*MultY)
+
+            if (sfcOperationSelect == "div"):
+                DivX = int(input("What is your first number?"))
+                DivY = int(input("What is your second number?"))
+                print("Here is your result:", DivX/DivY)
+
+            if (sfcOperationSelect == "pct"):
+                PctX = int(input("What is your number?"))
+                print("Here is your result:", PctX*100, "%")
+
+            if (sfcOperationSelect == "sqrt"):
+                SqrtX = int(input("What is your number?"))
+                print("Here is your result:", SqrtX**0.5)
+
+            ExitSFC = input("Do you want to exit the Six Function Calculator?\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'y' = Yes\n'n' = No")
+            if (ExitSFC == "y"):
+                break
+
+        if (SolvingLibrarySelect == "scic"):
+            scicOperationSelect = input("Welcome to the Scientific Calculator! What operation do you want to use?\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'add' = Addition\n'sub' = Subtraction\n'mult' = Multiplication\n'div' = Division\n'pct' = Percent'\n'sqr' = Square\n'sqrt' = Square Root\n'csep' = Custom Exponent\n'csrt' = Custom Root\n'log' = Logarithm\n\n'sin' = Sine\n'cos' = Cosine\n'tan' = Tangent")
+            if (scicOperationSelect == "add"):
+                AddX = float(input("What is your first number?"))
+                AddY = float(input("What is your second number?"))
+                print("Here is your result:", AddX+AddY)
+
+            if (scicOperationSelect == "sub"):
+                SubX = float(input("What is your first number?"))
+                SubY = float(input("What is your second number?"))
+                print("Here is your result:", SubX-SubY)
+
+            if (scicOperationSelect == "mult"):
+                MultX = float(input("What is your first number?"))
+                MultY = float(input("What is your second number?"))
+                print("Here is your result:", MultX*MultY)
+
+            if (scicOperationSelect == "div"):
+                DivX = float(input("What is your first number?"))
+                DivY = float(input("What is your second number?"))
+                print("Here is your result:", DivX/DivY)
+
+            if (scicOperationSelect == "pct"):
+                PctX = float(input("What is your number?"))
+                print("Here is your result:", PctX*100, "%")
+
+            if (scicOperationSelect == "sqr"):
+                SqrX = float(input("What is your number?"))
+                print("Here is your result:", SqrX**2)
+
+            if (scicOperationSelect == "sqrt"):
+                SqrtX = float(input("What is your number?"))
+                print("Here is your result:", SqrtX**0.5)
+
+            if (scicOperationSelect == "csep"):
+                CsepX = float(input("What is your base number?"))
+                CsepY = float(input("What is your exponent number?"))
+                print("Here is your result:", CsepX**CsepY)
+
+            if (scicOperationSelect == "csrt"):
+                CsrtX = float(input("What is your starting number?"))
+                CsrtY = float(input("What is your root?"))
+                print("Here is your result:", CsrtX**(1/CsrtY))
+
+            if (scicOperationSelect == "log"):
+                LogX = float(input("What is your base number?"))
+                LogY = float(input("What is your operated number?"))
+                print("Here is your result:", math.log(LogY,LogX))
+
+            if (scicOperationSelect == "sin"):
+                SinX = float(input("What is your operated number?"))
+                print("Here is your result:", math.sin(SinX))
+
+            if (scicOperationSelect == "cos"):
+                CosX = float(input("What is your operated number?"))
+                print("Here is your result:", math.cos(CosX))
+
+            if (scicOperationSelect == "tan"):
+                TanX = float(input("What is your operated number?"))
+                print("Here is your result:", math.tan(TanX))
+
+            ExitSCIC = input("Do you want to exit the Scientific Calculator?\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'y' = Yes\n'n' = No")
+            if (ExitSCIC == "y"):
+                break
